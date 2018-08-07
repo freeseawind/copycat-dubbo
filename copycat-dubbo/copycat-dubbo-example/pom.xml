@@ -8,7 +8,7 @@
 		<version>0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>dubbo-example</artifactId>
+	<artifactId>copycat-dubbo-example</artifactId>
 	<packaging>jar</packaging>
 
 	<dependencies>
