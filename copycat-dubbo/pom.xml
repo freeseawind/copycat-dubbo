@@ -48,10 +48,6 @@
 				<version>2.6.2</version>
 			</dependency>
 			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>dubbo</artifactId>
-			</dependency>
-			<dependency>
 				<groupId>org.apache.curator</groupId>
 				<artifactId>curator-client</artifactId>
 				<version>4.0.1</version>

@@ -21,6 +21,12 @@ public class ConsumerConf
         return applicationConfig;
     }
 
+    /**
+     * 服务消费者配置
+     * 
+     * @author freeseawind
+     * @return
+     */
     @Bean
     public ConsumerConfig consumerConfig()
     {
@@ -29,6 +35,12 @@ public class ConsumerConf
         return consumerConfig;
     }
 
+    /**
+     * 注册中心配置
+     * 
+     * @author freeseawind
+     * @return
+     */
     @Bean
     public RegistryConfig registryConfig()
     {
