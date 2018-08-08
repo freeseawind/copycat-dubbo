@@ -1,20 +1,32 @@
-package github.freeseawind.springboot.helloworld;
+package github.freeseawind.springboot.helloworld.consumer;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
+import com.alibaba.dubbo.config.ConsumerConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 
+/** 
+ * @author freeseawind   
+ */
 @Configuration
-public class ProviderConf
+public class ConsumerConf
 {
     @Bean
     public ApplicationConfig applicationConfig()
     {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("provider-test");
+        applicationConfig.setName("consumer-test");
         return applicationConfig;
+    }
+
+    @Bean
+    public ConsumerConfig consumerConfig()
+    {
+        ConsumerConfig consumerConfig = new ConsumerConfig();
+        consumerConfig.setTimeout(3000);
+        return consumerConfig;
     }
 
     @Bean

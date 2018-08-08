@@ -1,4 +1,4 @@
-package github.freeseawind.helloworld;
+package github.freeseawind.spring.helloworld;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
