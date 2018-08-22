@@ -9,6 +9,7 @@
 
 	<modules>
 		<module>copycat-dubbo-example</module>
+		<module>copycat-my-dubbo</module>
 	</modules>
 
 	<properties>
