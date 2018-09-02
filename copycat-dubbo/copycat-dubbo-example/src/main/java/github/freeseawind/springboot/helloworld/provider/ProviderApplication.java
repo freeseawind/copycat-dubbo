@@ -11,7 +11,7 @@ import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
  */
 @SpringBootApplication
 @EnableAutoConfiguration
-@DubboComponentScan(basePackages = "github.freeseawind.service")
+@DubboComponentScan(basePackages = "github.freeseawind.service.**")
 public class ProviderApplication
 {
     public static void main(String[] args)
