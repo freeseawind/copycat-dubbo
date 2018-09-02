@@ -1,4 +1,4 @@
-package github.freeseawind.springboot.helloworld.provider;
+package github.freeseawind.springboot.helloworld.provider2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -11,7 +11,7 @@ import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
  */
 @SpringBootApplication
 @EnableAutoConfiguration
-@DubboComponentScan(basePackages = "github.freeseawind.service")
+@DubboComponentScan(basePackages = "github.freeseawind.service.impl2")
 public class ProviderApplication
 {
     public static void main(String[] args)

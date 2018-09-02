@@ -24,14 +24,20 @@ import github.freeseawind.service.DemoService;
 @SpringBootTest(classes = ConsumerTest.class)
 public class ConsumerTest
 {
-    @Reference
+    @Reference(loadbalance="random")
     private DemoService demoService;
     
     @Test
     public void testRPC()
     {
+        for(int i = 0; i < 100; i++)
+        {
+            System.out.println(demoService.sayHello("freeseawind"));
+        }
+        
         String str = demoService.sayHello("freeseawind");
         
         assertEquals("Hello freeseawind", str);
+        
     }
 }
